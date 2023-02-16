@@ -12,7 +12,6 @@ def stackSortOne():
 
     for x in file:
         if x[:5] == 'move ':
-            print(nestedStack)
             # Command to grab from text file to move objects to new stack
             command = x[5:]
             # Splits the command into its 3 separate values
@@ -106,5 +105,5 @@ def stackSortTwo():
     # return nestedStack
 
 ##### PART 1/2 OUTPUT #####
-# print("Part one answer: " + stackSortOne())
+print("Part one answer: " + stackSortOne())
 print("Part two answer: " + stackSortTwo())
