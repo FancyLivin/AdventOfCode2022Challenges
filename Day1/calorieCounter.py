@@ -5,6 +5,7 @@ def maxCaloriesOne():
     maxCal = 0
     currentElfCal = 0
 
+    # Iterating through each group of numbers to find largest sum
     for x in file:
         if x != "\n":
             currentElfCal += int(x)
@@ -12,6 +13,8 @@ def maxCaloriesOne():
             if maxCal < currentElfCal:
                 maxCal = currentElfCal
             currentElfCal = 0
+
+    file.close()
     return maxCal
 
 ##### PART 2 #####
@@ -23,6 +26,7 @@ def maxCaloriesTwo():
     maxCal3 = 0
     currentElfCal = 0
 
+    # # Iterating through each group of numbers to find the three largest sums
     for x in file:
         if x != "\n":
             currentElfCal += int(x)
@@ -38,8 +42,9 @@ def maxCaloriesTwo():
                 maxCal3 = currentElfCal
             currentElfCal = 0
 
+    file.close()
     return maxCal1 + maxCal2 + maxCal3
 
-
-print(maxCaloriesOne())
-print(maxCaloriesTwo())
+##### PART 1/2 OUTPUT #####
+print("Part one answer: " + maxCaloriesOne())
+print("Part two answer: " + maxCaloriesTwo())

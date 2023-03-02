@@ -45,5 +45,5 @@ def cleanupTwo():
     return partiallyContained
 
 ##### PART 1/2 OUTPUT #####
-print(cleanupOne())
-print(cleanupTwo())
+print("Part one answer: " + cleanupOne())
+print("Part two answer: " + cleanupTwo())
